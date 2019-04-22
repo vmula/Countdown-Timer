@@ -1,0 +1,115 @@
+html,body,div,p,table,span,h1, button, input, label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+html, body {
+    height: 100%;
+    background: #f6f6f6;
+}
+
+h1 {
+    font-size: 2em;
+}
+.wrapper {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.absolute-center {
+    width: auto;
+    height: auto;
+    border:2px solid #d8d8d8;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+    background: #fff;
+}
+.count-timer {
+    width: 200px;
+    margin: 20px;
+    border:1px solid #dfdfdf;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.count-timer label, .count-timer input {
+    display: block;
+    text-align: center;
+}
+.count-timer input {
+    width: 40px;
+    height: 40px;
+    font-size: 2em;
+    margin: 5px;
+    border: 1px solid #d8d8d8;
+    transition: border-color 0s ease 0s, box-shadow 0.5s ease 0s;
+}
+.count-timer input:focus {
+    border-color: rgb(1, 86, 119);
+    transition: all 0.15s ease-out 0s;
+    box-shadow: rgba(221, 227, 230, 0.25) 0px 0px 0px 2px inset;
+    outline: 0px;
+}
+.count-timer input:read-only {
+    background: #fff;
+    border-color: transparent;
+    outline: 0px;
+    box-shadow: transparent;
+}
+.form-div {
+    text-align: center;
+}
+
+.count-timer > span {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    margin: 5px 0;
+    height: 40px;
+}
+.count-minus:after {
+    content: '-';
+    color: red;
+}
+.count-colon:after {
+    content: ':';
+}
+
+.count-buttons button {
+    width: 5em;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.count-buttons, .btns_start_reset, .btns_others {
+    display: none;
+    padding-bottom: 5px;
+}
+#ct_msg, #count-timer-laps{
+    width: 100%;
+}
+.ct-lap-cont, .ct_lap_msg {
+    padding: 10px;
+    border-top: 1px solid #d8d8d8;
+}
+.ct_lap_msg {
+    color:red;
+}
+.ct_alert_bg {
+    border:1px solid red;
+    opacity: 50;
+    transition: all 0.5s ease-in-out;
+}
