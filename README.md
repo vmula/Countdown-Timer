@@ -16,7 +16,7 @@ Below are the user stories as per my understanding:
 
 1. Clone the repo<br />
 2. Go to the folder where you checkout the files.<br />
-3.Open 'counter_timer.html' file in browser OR right click on the file and open in the browser.<br />
+3. Open 'counter_timer.html' file in browser OR right click on the file and open in the browser.<br />
 
 # Supported Browsers
 
